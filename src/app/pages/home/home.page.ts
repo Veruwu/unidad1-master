@@ -12,7 +12,14 @@ export class HomePage {
 
   hacerclick(){
     console.log("hice click");
+    this.router.navigate(['pagina1']);
+  }
+  hacerclick2(){
+    console.log("hice click");
     this.router.navigate(['pagina2']);
   }
 
+  navegar(ruta:string){
+    this.router.navigate(['/'+ruta])
+  }
 }
