@@ -1,0 +1,18 @@
+
+<app-encabezado titulo="Formulario"></app-encabezado>
+
+<ion-content class="ion-padding">
+<form #miformulario="ngForm" (ngSubmit)="onSubmit()">
+  <ion-item>
+    
+    <ion-input labelPlacement="floating" required type="email" aria-label="Email" name="email" [(ngModel)]="usuario.username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Password <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="text" aria-label="Password" [(ngModel)]="usuario.password"></ion-input>
+  </ion-item>
+  <ion-button block color="primary" type="submit" class="ion-padding" [disabled]="miformulario.invalid">
+    Login
+  </ion-button>
+</form>
+</ion-content>

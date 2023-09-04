@@ -18,9 +18,14 @@ const routes: Routes = [
   {
     path: 'pagina2',
     loadChildren: () => import('./pages/pagina2/pagina2.module').then( m => m.Pagina2PageModule)
-  },  {
+  },
+  {
     path: 'alertas',
     loadChildren: () => import('./pages/alertas/alertas.module').then( m => m.AlertasPageModule)
+  },
+  {
+    path: 'form',
+    loadChildren: () => import('./pages/form/form.module').then( m => m.FormPageModule)
   },
 
 ];

@@ -15,14 +15,17 @@
   <ion-text color="dark">
     <p>Esta es la página inicial de la aplicación para aprender a usar <span class="chokita">IONIC</span> </p>
   </ion-text>
-  <ion-button expand="full" fill="solid" shape="round" (click)="hacerclick()">
+  <ion-button expand="full" fill="solid" shape="round" (click)="navegar('pagina1')">
     Página 1
   </ion-button>
-  <ion-button expand="full" fill="solid" shape="round" (click)="hacerclick2()">
+  <ion-button expand="full" fill="solid" shape="round" (click)="navegar('pagina2')">
     Página 2
   </ion-button>
   <ion-button expand="full" fill="solid" shape="round" (click)="navegar('alertas')">
     alertas
+  </ion-button>
+  <ion-button expand="full" fill="solid" shape="round" (click)="navegar('form')">
+    formulario
   </ion-button>
   
   <!-- <ion-text color="tertiary" routerLink="/pagina1">

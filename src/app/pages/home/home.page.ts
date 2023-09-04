@@ -22,4 +22,8 @@ export class HomePage {
   navegar(ruta:string){
     this.router.navigate(['/'+ruta])
   }
+  hacerclick3(){
+    console.log("hice click");
+    this.router.navigate(['formulario']);
+  }
 }
