@@ -11,5 +11,5 @@ export class AlertasPage implements OnInit {
 
   ngOnInit() {
   }
-
+  public alertButtons = ['OK'];
 }
